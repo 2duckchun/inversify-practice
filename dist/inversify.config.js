@@ -1,0 +1,14 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.container = void 0;
+const inversify_1 = require("inversify");
+const types_1 = require("./types");
+const entities_1 = require("./entities");
+const container = new inversify_1.Container();
+exports.container = container;
+container.bind(types_1.TYPES.Warrior).to(entities_1.Ninja);
+container.bind(types_1.TYPES.Weapon).to(entities_1.Katana);
+container.bind(types_1.TYPES.ThrowableWeapon).to(entities_1.Shuriken);
+container.bind(types_1.TYPES.Knight).to(entities_1.Knigh);
+container.bind(types_1.TYPES.Hammer).to(entities_1.Hammer);
+container.bind(types_1.TYPES.Spear).to(entities_1.Spear);
