@@ -9,6 +9,6 @@ exports.container = container;
 container.bind(types_1.TYPES.Warrior).to(entities_1.Ninja);
 container.bind(types_1.TYPES.Weapon).to(entities_1.Katana);
 container.bind(types_1.TYPES.ThrowableWeapon).to(entities_1.Shuriken);
-container.bind(types_1.TYPES.Knight).to(entities_1.Knigh);
+container.bind(types_1.TYPES.Knight).to(entities_1.Knight);
 container.bind(types_1.TYPES.Hammer).to(entities_1.Hammer);
 container.bind(types_1.TYPES.Spear).to(entities_1.Spear);

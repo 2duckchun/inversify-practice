@@ -12,7 +12,7 @@ var __param = (this && this.__param) || function (paramIndex, decorator) {
     return function (target, key) { decorator(target, key, paramIndex); }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Knigh = exports.Spear = exports.Hammer = exports.Shuriken = exports.Katana = exports.Ninja = void 0;
+exports.Knight = exports.Spear = exports.Hammer = exports.Shuriken = exports.Katana = exports.Ninja = void 0;
 const inversify_1 = require("inversify");
 require("reflect-metadata");
 const types_1 = require("./types");
@@ -52,7 +52,7 @@ Spear = __decorate([
     (0, inversify_1.injectable)()
 ], Spear);
 exports.Spear = Spear;
-let Knigh = class Knigh {
+let Knight = class Knight {
     constructor(hammer, spear) {
         this._Hammer = hammer;
         this._spear = spear;
@@ -64,13 +64,13 @@ let Knigh = class Knigh {
         return this._spear.throw();
     }
 };
-Knigh = __decorate([
+Knight = __decorate([
     (0, inversify_1.injectable)(),
     __param(0, (0, inversify_1.inject)(types_1.TYPES.Hammer)),
     __param(1, (0, inversify_1.inject)(types_1.TYPES.Spear)),
     __metadata("design:paramtypes", [Object, Object])
-], Knigh);
-exports.Knigh = Knigh;
+], Knight);
+exports.Knight = Knight;
 // Constructor Injection
 let Ninja = class Ninja {
     constructor(katana, shuriken) {
