@@ -32,7 +32,7 @@ class Spear implements ThrowableWeapon {
 }
 
 @injectable()
-class Knigh implements Warrior {
+class Knight implements Warrior {
   private _Hammer: Weapon;
   private _spear: ThrowableWeapon;
 
@@ -76,4 +76,4 @@ class Ninja implements Warrior {
   }
 }
 
-export { Ninja, Katana, Shuriken, Hammer, Spear, Knigh }
+export { Ninja, Katana, Shuriken, Hammer, Spear, Knight }
